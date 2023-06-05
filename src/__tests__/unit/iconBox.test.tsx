@@ -1,7 +1,7 @@
-import type { Technology } from '@/types'
 import { render } from '@testing-library/react'
-import IconBox from '@/components/IconBox'
 import { describe, expect, test } from 'vitest'
+import type { Technology } from '@/types'
+import IconBox from '@/components/IconBox'
 
 describe('icon box', () => {
   test('renders icon box with provided props', () => {
