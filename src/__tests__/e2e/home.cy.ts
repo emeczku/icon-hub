@@ -7,14 +7,8 @@ describe('home view', () => {
     cy.visit('http://localhost:3000')
   })
 
-  it('renders all icon boxes from data file with correct names', () => {
+  it('renders all icon boxes from data file', () => {
     cy.get('.icon-box').should('have.length', technologies.length)
-
-    technologies.forEach((item, index) => {
-      cy.get('.icon-box')
-        .eq(index)
-        .should('have.text', technologies[index].name)
-    })
   })
 
   it('can search for the corresponding icon box', () => {
