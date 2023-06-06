@@ -2,6 +2,7 @@ import type { Technology } from '@/types'
 
 export const technologies: Technology[] = [
   {
+    id: 1,
     name: 'GitHub',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
@@ -10,6 +11,7 @@ export const technologies: Technology[] = [
     category: 'Development',
   },
   {
+    id: 2,
     name: 'GitLab',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg',
@@ -18,6 +20,7 @@ export const technologies: Technology[] = [
     category: 'Development',
   },
   {
+    id: 3,
     name: 'Git',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
@@ -26,6 +29,7 @@ export const technologies: Technology[] = [
     category: 'Development',
   },
   {
+    id: 4,
     name: 'JavaScript',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
@@ -34,6 +38,7 @@ export const technologies: Technology[] = [
     category: 'Front-end',
   },
   {
+    id: 5,
     name: 'TypeScript',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
@@ -42,6 +47,7 @@ export const technologies: Technology[] = [
     category: 'Full-stack',
   },
   {
+    id: 6,
     name: 'HTML',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
@@ -50,6 +56,7 @@ export const technologies: Technology[] = [
     category: 'Front-end',
   },
   {
+    id: 7,
     name: 'CSS',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
@@ -58,6 +65,7 @@ export const technologies: Technology[] = [
     category: 'Front-end',
   },
   {
+    id: 8,
     name: 'Sass',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
@@ -66,6 +74,7 @@ export const technologies: Technology[] = [
     category: 'Front-end',
   },
   {
+    id: 9,
     name: 'Tailwind CSS',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
@@ -74,6 +83,7 @@ export const technologies: Technology[] = [
     category: 'Front-end',
   },
   {
+    id: 10,
     name: 'Bootstrap',
     image:
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
