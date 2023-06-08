@@ -33,7 +33,7 @@ describe('search input', () => {
     expect(iconBoxes).toBe(1)
   })
 
-  test('checks if the length of the icon fields has changed', () => {
+  test('checks if the length of the icon boxes has changed', () => {
     searchingIcon = 'React'
 
     expect(iconBoxes).toBe(technologies.length)
