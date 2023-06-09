@@ -6,16 +6,7 @@ import type { Technology } from '@/types'
 
 describe('icons container', () => {
   test('renders the container with the provided technologies from the data file', () => {
-    render(
-      <IconsContainer
-        data-testid={'icons-container'}
-        technologies={technologies}
-      />
-    )
-
-    const container = screen.getByTestId('icons-container')
-
-    expect(container).toBeInTheDocument()
+    render(<IconsContainer technologies={technologies} />)
 
     technologies.forEach((item: Technology) => {
       const technologyName = screen.getByText(item.name)
