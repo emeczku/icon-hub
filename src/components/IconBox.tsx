@@ -10,7 +10,7 @@ const IconBox: FC<IconBoxProps> = ({ technology }) => {
   return (
     <div
       className={
-        'w-60 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl'
+        'icon-box w-60 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl'
       }>
       <Image
         className={
