@@ -10,7 +10,7 @@ const IconsContainer: FC<IconsContainerProps> = ({ technologies }) => {
   return (
     <div
       className={
-        'w-fit mx-auto grid grid-cols-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 justify-items-center justify-center gap-5 mt-10 mb-5'
+        'mt-10 flex flex-wrap justify-between gap-y-20 gap-x-10 md:gap-x-5'
       }>
       {technologies.map((technology) => (
         <IconBox key={technology.id} technology={technology} />
