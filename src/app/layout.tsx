@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <main className={'max-w-screen-xl m-auto'}>{children}</main>
+        <main className={'container mx-auto'}>{children}</main>
       </body>
     </html>
   )
