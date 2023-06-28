@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { ReactNode } from 'react'
+import ReduxProvider from "@/components/ReduxProvider";
 
 export const metadata = {
   title: 'Icon Hub',
@@ -10,7 +11,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <main className={'container mx-auto'}>{children}</main>
+        <ReduxProvider>
+          <main className={'container mx-auto'}>{children}</main>
+        </ReduxProvider>
       </body>
     </html>
   )

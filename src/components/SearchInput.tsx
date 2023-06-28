@@ -1,6 +1,18 @@
-import { FC } from 'react'
+'use client'
+
+import { FC, FormEvent } from 'react'
+import { setSearch } from '@/store/store'
+import { useDispatch } from 'react-redux'
 
 const SearchInput: FC = () => {
+  const dispatch = useDispatch()
+
+  const handleChange = (ev: FormEvent<HTMLInputElement>) => {
+    const targetValue = ev.currentTarget.value
+
+    dispatch(setSearch(targetValue))
+  }
+
   return (
     <div className={'mt-10 w-80 relative'}>
       <input
@@ -10,6 +22,7 @@ const SearchInput: FC = () => {
           'w-full h-10 px-3 border-black text-base uppercase tracking-widest  border-solid border-2 border-black focus-visible::border-solid focus-visible::border-2 focus-visible::border-black'
         }
         placeholder="search..."
+        onChange={handleChange}
       />
       <span className={'absolute right-3 top-2'}>
         <svg
