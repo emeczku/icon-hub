@@ -5,3 +5,8 @@ export interface Technology {
   description: string
   category: string
 }
+
+export type State = {
+  technologies: Technology[]
+  filteredTechnologies: Technology[]
+}
