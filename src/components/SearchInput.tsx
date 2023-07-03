@@ -14,7 +14,7 @@ const SearchInput: FC = () => {
   }
 
   return (
-    <div className={'mt-10 w-80 relative'}>
+    <div className={'w-80 relative'}>
       <input
         type="text"
         name="text"
