@@ -4,9 +4,10 @@ import Image from 'next/image'
 
 interface IconBoxProps {
   technology: Technology
+  handleClick: (technology: Technology) => void
 }
 
-const IconBox: FC<IconBoxProps> = ({ technology }) => {
+const IconBox: FC<IconBoxProps> = ({ technology, handleClick }) => {
   return (
     <div
       className={
@@ -21,10 +22,11 @@ const IconBox: FC<IconBoxProps> = ({ technology }) => {
         src={technology.image}
         alt={technology.name}
       />
-      <div className={'px-4 py-3 w-60'}>
-        <p className="text-lg font-bold text-black truncate block capitalize">
+      <div className={'flex justify-between px-4 py-3'}>
+        <span className="text-lg font-bold text-black truncate block capitalize">
           {technology.name}
-        </p>
+        </span>
+        <button onClick={() => handleClick(technology)}>+</button>
       </div>
     </div>
   )

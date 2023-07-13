@@ -19,7 +19,7 @@ const SearchInput: FC = () => {
         type="text"
         name="text"
         className={
-          'w-full h-10 px-3 border-black text-base uppercase tracking-widest  border-solid border-2 border-black focus-visible::border-solid focus-visible::border-2 focus-visible::border-black'
+          'w-full h-10 px-3 text-base uppercase tracking-widest  border-solid border-2 border-black focus-visible::border-solid focus-visible::border-2 focus-visible::border-black'
         }
         placeholder="search..."
         onChange={handleChange}

@@ -9,4 +9,5 @@ export interface Technology {
 export type State = {
   technologies: Technology[]
   filteredTechnologies: Technology[]
+  activeTechnology: Technology
 }
