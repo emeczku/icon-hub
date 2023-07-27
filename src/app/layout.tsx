@@ -10,9 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body className={'bg-gray-50'}>
         <ReduxProvider>
-          <main className={'mt-10 mb-10 container mx-auto'}>{children}</main>
+          <main className={'pt-10 pb-10 container mx-auto'}>{children}</main>
         </ReduxProvider>
       </body>
     </html>
