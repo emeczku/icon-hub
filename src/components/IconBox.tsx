@@ -1,6 +1,9 @@
+'use client'
+
 import { FC } from 'react'
 import type { Technology } from '@/types'
 import Image from 'next/image'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 interface IconBoxProps {
   technology: Technology
@@ -26,7 +29,9 @@ const IconBox: FC<IconBoxProps> = ({ technology, handleClick }) => {
         <span className="text-lg font-bold text-black truncate block capitalize">
           {technology.name}
         </span>
-        <button onClick={() => handleClick(technology)}>+</button>
+        <CopyToClipboard text={technology.description}>
+          <button onClick={() => handleClick(technology)}>+</button>
+        </CopyToClipboard>
       </div>
     </div>
   )
